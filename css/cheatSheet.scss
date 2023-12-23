@@ -1,0 +1,103 @@
+// function and how to apply it.
+@mixin Colors($color){
+    background-color: $color ;
+    color: lighten($color, 50%);
+}
+
+.container{
+    @include Colors(#3a6c4f)
+}
+// How to import the other page in main page
+// in this example suppose you have a function in the other page.
+@import "./style.scss";
+.header{
+    @include Colors(green);
+}
+// How to decleare variabels and to use this variable use as it decleared.
+$VariableName:rgb(90, 5, 5);
+
+//How to extend the ohter page(inheritance)
+.content{
+    @extend .container;
+    background-color: violet;
+}
+// Variable
+$primary-color: #3498db;
+
+// Nesting
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+// Mixin
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Extend
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: $success-color;
+}
+
+// If statement
+$text-color: #333;
+
+body {
+  @if lightness($text-color) > 30% {
+    background-color: #fff;
+  } @else {
+    background-color: #000;
+  }
+}
+
+// For loop
+@for $i from 1 through 5 {
+  .item-#{$i} { width: 20px * $i; }
+}
+
+// Each loop
+$colors: #3498db, #e74c3c, #2ecc71;
+
+@each $color in $colors {
+  .bg-#{$color} {
+    background-color: $color;
+  }
+}
+
+// Import
+@import 'other-styles';
+
+// Media query
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+// Function
+$font-size: 14px;
+
+p {
+  font-size: adjust-font-size($font-size, 2);
+}
