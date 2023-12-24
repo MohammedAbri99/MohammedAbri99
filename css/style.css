@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --color1: #164863;
+  --color2: #427D9D;
+  --color3: #9BBEC8;
+  --color4: #DDF2FD;
+}
+
+.dark-theme {
+  --color1: #151515;
+  --color2: #301B3F;
+  --color3: #3C415C;
+  --color4: #B4A5A5;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -8,7 +22,7 @@
 }
 
 header {
-  background-color: #164863;
+  background-color: var(--color1);
   width: 100%;
   position: fixed;
   z-index: 999;
@@ -20,21 +34,21 @@ header {
 
 .logo {
   text-decoration: none;
-  color: #DDF2FD;
+  color: var(--color4);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.8em;
 }
 
 .navigation a {
-  color: #DDF2FD;
+  color: var(--color4);
   text-decoration: none;
   font-size: 1.1em;
   font-weight: 500;
   padding-left: 30px;
 }
 .navigation a:hover {
-  color: #9BBEC8;
+  color: var(--color3);
 }
 
 section {
@@ -45,7 +59,7 @@ section {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  background-color: #9BBEC8;
+  background-color: var(--color3);
 }
 .main .background-image {
   width: 100%;
@@ -57,19 +71,19 @@ section {
      object-fit: cover;
 }
 .main h2 {
-  color: #427D9D;
+  color: var(--color2);
   font-size: 1.4em;
   font-weight: 500;
 }
 .main h2 span {
   display: inline-block;
   margin-top: 10px;
-  color: #164863;
+  color: var(--color1);
   font-size: 2em;
   font-weight: 600;
 }
 .main h3 {
-  color: #427D9D;
+  color: var(--color2);
   font-size: 1.5em;
   font-weight: 700;
   letter-spacing: 1px;
@@ -78,8 +92,8 @@ section {
 }
 
 .main-btn {
-  color: #9BBEC8;
-  background-color: #164863;
+  color: var(--color3);
+  background-color: var(--color1);
   text-decoration: none;
   font-size: 1.1em;
   font-weight: 600;
@@ -91,13 +105,13 @@ section {
   transition: 0.7s ease;
 }
 .main-btn:hover {
-  background-color: #427D9D;
-  color: #164863;
+  background-color: var(--color2);
+  color: var(--color1);
   transform: scale(1.1);
 }
 
 .social-icons a {
-  color: #DDF2FD;
+  color: var(--color4);
   font-size: 1.7em;
   padding-right: 30px;
 }
@@ -105,7 +119,7 @@ section {
 .title {
   display: flex;
   justify-content: center;
-  color: #164863;
+  color: var(--color1);
   font-size: 2.2em;
   font-weight: 800;
   margin-bottom: 30px;
@@ -149,21 +163,21 @@ section {
   transform: scale(1.1);
 }
 .card .icon {
-  color: #164863;
+  color: var(--color1);
   font-size: 8em;
   text-align: center;
 }
 
 .projects {
-  background-color: #9BBEC8;
+  background-color: var(--color3);
 }
 .projects .content {
   margin-top: 30px;
 }
 
 .project-card {
-  background-color: #DDF2FD;
-  border: 1px solid #164863;
+  background-color: var(--color4);
+  border: 1px solid var(--color1);
   min-height: 14em;
   width: 23em;
   overflow: hidden;
@@ -202,10 +216,10 @@ section {
 
 .more-details {
   text-decoration: none;
-  color: #164863;
+  color: var(--color1);
 }
 .more-details:hover {
-  color: #9BBEC8;
+  color: var(--color3);
 }
 
 .contact .icon {
@@ -231,8 +245,8 @@ section {
 }
 
 .footer {
-  background-color: #164863;
-  color: #9BBEC8;
+  background-color: var(--color1);
+  color: var(--color3);
   padding: 2em;
   display: flex;
   justify-content: space-between;
@@ -242,7 +256,7 @@ section {
   font-weight: 600;
 }
 .footer .footer-title span {
-  color: #DDF2FD;
+  color: var(--color4);
 }
 .footer .footer-title .social-icons a {
   font-size: 1.3em;

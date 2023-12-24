@@ -1,6 +1,6 @@
 .footer {
-    background-color: $color1;
-    color: $color3;
+    background-color: var(--color1);
+    color: var(--color3);
     padding: 2em;
     display: flex;
     justify-content: space-between;
@@ -10,7 +10,7 @@
         font-weight: 600;
         
         span {
-            color: $color4;
+            color: var(--color4);
         }
 
         .social-icons a{

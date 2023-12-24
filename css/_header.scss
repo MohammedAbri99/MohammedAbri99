@@ -1,5 +1,5 @@
 header {
-    background-color: $color1;
+    background-color: var(--color1);
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -11,20 +11,20 @@ header {
 
 .logo{
     text-decoration: none;
-    color: $color4;
+    color: var(--color4);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
 }
 .navigation{
     a{
-        color: $color4;
+        color: var(--color4);
         text-decoration: none;
         font-size: 1.1em;
         font-weight: 500;
         padding-left: 30px;
     }
     a:hover{
-        color: $color3;
+        color: var(--color3);
     }
 }

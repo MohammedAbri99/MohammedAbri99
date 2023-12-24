@@ -38,7 +38,7 @@ section {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    background-color: $color3;
+    background-color: var(--color3);
     .background-image{
         width: 100%;
         
@@ -49,19 +49,19 @@ section {
         }
     }
 h2{
-        color: $color2;
+    color: var(--color2);
         font-size: 1.4em;
         font-weight: 500;
     }
     h2 span{
         display: inline-block;
         margin-top: 10px;
-        color: $color1;
+        color: var(--color1);
         font-size: 2em;
         font-weight: 600;
     }
     h3{
-        color: $color2;
+        color: var(--color2);
         font-size: 1.5em;
         font-weight: 700;
         letter-spacing: 1px;
@@ -87,8 +87,8 @@ h2{
 //     transform: scale(1.1);
 // }
 .main-btn{
-    color: $color3;
-    background-color: $color1;
+    color: var(--color3);
+    background-color: var(--color1);
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -99,14 +99,14 @@ h2{
     margin-bottom: 40px;
     transition: 0.7s ease;
     &:hover{
-        background-color: $color2;
-        color: $color1;
+        background-color: var(--color2);
+        color: var(--color1);
         transform: scale(1.1);
     }
 }
 .social-icons{
     a {
-        color: $color4;
+        color: var(--color4);
         font-size: 1.7em;
         padding-right: 30px;
     }
